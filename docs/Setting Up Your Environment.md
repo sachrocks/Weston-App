@@ -12,7 +12,7 @@ The first thing you should do is log into your account. You can do this by going
 
 After this step is completed, head to the repository you will be working on. In this case, we will use [our repository](https://github.com/csprojectweston/Weston-App). Click the green dropdown and click "Open in Desktop".
 
-![gh-desktop-clone](gh-desktop-clone.gif)
+![gh-desktop-clone](media/gh-desktop-clone.gif)
 
 GitHub desktop is pretty easy to figure out so I won't cover it in depth; however, I'll show an example of creating, committing, and pushing a file to the repository.
 
