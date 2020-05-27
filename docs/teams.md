@@ -24,3 +24,4 @@
 ### UI Responsiveness Team (Front-End)
 - Ian
 - Maya
+- Giuliano
