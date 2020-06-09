@@ -1,0 +1,9 @@
+DROP TABLE IF EXISTS locations;
+
+CREATE TABLE user (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  locationName TEXT UNIQUE NOT NULL,
+  xCoordinate FLOAT UNIQUE NOT NULL,
+  yCoordinate FLOAT UNIQUE NOT NULL,
+  information FLOAT NOT NULL,
+);
