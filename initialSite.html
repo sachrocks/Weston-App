@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> CBHS Weston Map Project </title>
+    <style>
+    body {
+      background-color: linen;
+    }
+    #main-header{
+
+    }
+    #navbar{
+
+    }
+    </style>
+  </head>
+  <body>
+    <header id="main-header">
+        <h1>CBHS Weston Map Project</h1>
+    </header>
+    <nav id="navbar">
+      <ul>
+        <li><a href="#">Map</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <input type="text" placeholder="Search...">
+      </ul>
+    </nav>
+    <hr>
+    <br> <br>
+    <img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Map_of_Florida_highlighting_Weston.svg/1200px-Map_of_Florida_highlighting_Weston.svg.png" width = "40%" height = "30%">
+    <p> What is your concern? </p>
+    <form name = "contact">
+      <input type="radio" id="webissue" name="issue" value="webissue">
+      <label for="webissue">There's a problem with the website.</label><br>
+      <input type="radio" id="info" name="issue" value="info">
+      <label for="info">The information is inaccurate.</label><br>
+      <input type="radio" id="other" name="issue" value="other">
+      <label for="other">Other</label> <br>
+      <label for=email> Email: </label><br>
+      <input type = "text" id = "email" name = "email"> <br>
+      <label for = msg height = "32000px"> Message: </label> <br>
+      <input type = "text"  id = "Message" name = "Message" >
+      <br>
+      <button type="button" onclick="test()">Submit!</button>
+    </form>
+
+    <p id="parrota">
+
+     </p>
+    <hr>
+    <script>
+    function test(){
+      alert("Thanks for contacting us!");
+      var iidttt
+        idttt=document.getElementById('parrota');
+        idttt.innerHTML='Your message has been sent.';
+    }
+    </script>
+  </body>
+</html>
