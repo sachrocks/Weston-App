@@ -3,48 +3,93 @@
   <head>
     <title> CBHS Weston Map Project </title>
     <style>
+    <!-- color scheme: light, baby blue, pastel yellow, muted gray tones!-->
     body {
-      background-color: linen;
+      color: #FAEBD7;
+    }
+    .main{
+      font-family: Verdana, sans-serif;
+      font-size:12px;
+    }
+    ul {
+      font-family: Optima, fantasy;
+      font-style: normal;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #E0FFFF;
+    }
+    li {
+      float: left;
+    }
+    li a {
+      display: block;
+      color: black;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    li a:hover {
+      background-color: #87CEFA;
     }
     #main-header{
-
+     font-family: Optima, fantasy;
+     font-style: normal;
+     text-align: center;
+     background: #EFAFC0;
+     padding: 10px;
+     color: #7FEFC4;
+     text-shadow: 1px 1px #FFFFFF;
     }
-    #navbar{
-
+    #main-footer{
+      font-family: Impact, fantasy;
+      font-size: 1em;
+      background: lavender;
+      color: #FDFD96;
+      text-align: center;
+      padding:20px;
+      margin-top:40px;
+      text-shadow: 1px 1px #AAAAAA;
+    }
+    #img{
+      border-style: dashed;
     }
     </style>
   </head>
   <body>
     <header id="main-header">
-        <h1>CBHS Weston Map Project</h1>
+        <h1>CBHS WESTON MAP PROJECT</h1>
     </header>
     <nav id="navbar">
       <ul>
-        <li><a href="#">Map</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact Us</a></li>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#map">Map</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact Us</a></li>
         <input type="text" placeholder="Search...">
       </ul>
     </nav>
     <hr>
     <br> <br>
-    <img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Map_of_Florida_highlighting_Weston.svg/1200px-Map_of_Florida_highlighting_Weston.svg.png" width = "40%" height = "30%">
-    <p> What is your concern? </p>
-    <form name = "contact">
-      <input type="radio" id="webissue" name="issue" value="webissue">
-      <label for="webissue">There's a problem with the website.</label><br>
-      <input type="radio" id="info" name="issue" value="info">
-      <label for="info">The information is inaccurate.</label><br>
-      <input type="radio" id="other" name="issue" value="other">
-      <label for="other">Other</label> <br>
-      <label for=email> Email: </label><br>
-      <input type = "text" id = "email" name = "email"> <br>
-      <label for = msg height = "32000px"> Message: </label> <br>
-      <input type = "text"  id = "Message" name = "Message" >
-      <br>
-      <button type="button" onclick="test()">Submit!</button>
-    </form>
-
+    <img id="img" src = "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Map_of_Florida_highlighting_Weston.svg/1200px-Map_of_Florida_highlighting_Weston.svg.png" width = "40%" height = "30%">
+    <div class= "main">
+        <p> What is your concern? </p>
+        <form name = "contact">
+          <input type="radio" id="webissue" name="issue" value="webissue">
+          <label for="webissue">There's a problem with the website.</label><br>
+          <input type="radio" id="info" name="issue" value="info">
+          <label for="info">The information is inaccurate.</label><br>
+          <input type="radio" id="other" name="issue" value="other">
+          <label for="other">Other</label> <br>
+          <label for=email> Email: </label><br>
+          <input type = "text" id = "email" name = "email"> <br>
+          <label for = msg height = "32000px"> Message: </label> <br>
+          <input type = "text"  id = "Message" name = "Message" >
+          <br>
+          <button type="button" onclick="test()">Submit!</button>
+        </form>
+  </div>
     <p id="parrota">
 
      </p>
@@ -57,5 +102,8 @@
         idttt.innerHTML='Your message has been sent.';
     }
     </script>
+    <footer id="main-footer">
+      <p>Copyright &copy; 2020, CBHS Weston Map Project</p>
+    </footer>
   </body>
 </html>
